@@ -1,0 +1,8 @@
+server:
+  port: 8080
+logging:
+  level:
+    com.guosen.spring: debug
+spring:
+  thymeleaf:
+    cache: false

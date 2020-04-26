@@ -1,0 +1,21 @@
+url:
+  orderUrl: http://localhost:8080/order/
+  shopURL: http://localhost:8080/shop/
+  userUrl: http://localhost:8080/user/
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/blog?serverTimezone=GMT%2B8&useSSL=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&autoReconnect=true&failOverReadOnly=false&maxReconnects=10
+    username: root
+    password: 123456
+    hikari:
+      maximum-pool-size: 10
+      max-lifetime: 1770000
+mybatis:
+  type-aliases-package: com.guosen.spring.basic
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations:
+    - classpath:mapper/*.xml
