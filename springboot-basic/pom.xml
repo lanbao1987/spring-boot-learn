@@ -12,7 +12,7 @@
     <artifactId>springboot-basic</artifactId>
 
     <properties>
-        <spring.version>2.1.2.RELEASE</spring.version>
+        <spring.version>2.5.12</spring.version>
     </properties>
 
     <dependencies>
